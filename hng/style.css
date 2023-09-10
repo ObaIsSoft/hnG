@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.nav-wrapper{
+    background-color: #b206c6;
+    color: aliceblue;
+    border-bottom: #555 0.5px solid;
+}
+.nav-bar{
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-item{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.title{
+    font-size: 15px;
+}
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1em 2em;
+}
+.img_wrapper{
+position: relative;
+padding: 20px;
+}
+.name{
+    text-align: right;
+}
+.bottom{
+    padding: 5px;
+    margin: 2em;
+    border: #b206c6 1px solid;
+    border-radius: 10px;
+}
+.time-date{
+    display: flex;
+    margin: 0 2em;
+    justify-content: space-between;
+}
+.time-text{
+    padding-left: 14px;
+}
+#c-day{
+padding: 2px 5px 2px 5px;
+border: 1px solid #555;
+border-radius: 10px;
+font-weight: bolder;
+}
+#c-time{
+    padding: 2px 5px 2px 5px;
+border: 1px solid #555;
+border-radius: 10px;
+font-weight: bolder;
+}
+.track{
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+.dialogue{
+
+ text-align: center;
+ padding: 20px;
+ margin-top: 10px;
+}
+.link{
+    margin-top: 15px;
+    color: #b206c6;
+    padding: 5px;
+    border: #b206c6 1px solid;
+}
