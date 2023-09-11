@@ -4,11 +4,23 @@ body{
 }
 a{
     text-decoration: none;
+    color: aliceblue;
+}
+a::after{
+    text-decoration: none;
+}
+a:hover{
+    font-size: 20px;
+    font-weight: bolder;
+    color: aliceblue;
 }
 li{
     list-style: none;
+    border-radius: 7px;
+    margin: 5px;
 }
 .nav-wrapper{
+
     background-color: #b206c6;
     color: aliceblue;
     border-bottom: #555 0.5px solid;
@@ -19,8 +31,15 @@ li{
     justify-content: space-between;
 }
 .nav-item{
-    margin-right: 5px;
-    margin-left: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 5em;
+    margin-left: 3em;
+}
+li{
+    padding: 5px;
+    border: 0.7px solid #fff;
+
 }
 .title{
     font-size: 15px;
@@ -28,19 +47,24 @@ li{
 .top{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 1em 2em;
 }
 .img_wrapper{
 position: relative;
 padding: 20px;
+
 }
 .name{
-    text-align: right;
+    position: absolute;
+    margin: 5px;
+    right: 53%;
+    z-index: 2;
 }
 .bottom{
     padding: 5px;
-    margin: 2em;
+    margin-left: 20em;
+    margin-right: 20em;
     border: #b206c6 1px solid;
     border-radius: 10px;
 }
@@ -55,19 +79,21 @@ padding: 20px;
 #c-day{
 padding: 2px 5px 2px 5px;
 border: 1px solid #555;
-border-radius: 10px;
+border-radius: 5px;
 font-weight: bolder;
 }
 #c-time{
     padding: 2px 5px 2px 5px;
 border: 1px solid #555;
-border-radius: 10px;
+border-radius: 5px;
 font-weight: bolder;
+}
+.track-wrapper{
+    text-align: center;
 }
 .track{
     font-size: 25px;
     font-weight: bold;
-    
 }
 .dialogue{
 
