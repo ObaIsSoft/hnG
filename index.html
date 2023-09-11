@@ -12,7 +12,9 @@
             <nav class="nav-bar">
                 <p class="title nav-item">Soft</p>
                 <ul class="nav-item">
-                    <li>home</li>
+                    <a href="#"><li>home</li></a>
+                    <a href="#"><li>about</li></a>
+                    <a href="#"><li>content</li></a>
                 </ul>
             </nav>
         </div>
@@ -23,14 +25,13 @@
            <div class="img_wrapper">
                 <img src="./user.png" alt="Obafemi Adebayo-Oyetoro" data-testid="slackDisplayImage" height="200px" width="200px">
            </div> 
-           <hr class="line">
         </div>
         <div class="bottom">
             <div class="time-date">
                 <p class="day-text"> The current day is <span id="c-day" data-testid="currentDayOfTheWeek"></span></p>
                 <p class="time-text"> and the current time is <span id="c-time" data-testid="currentUTCTime"></span></p>
             </div>
-            <div>
+            <div class="track-wrapper">
                 <p>My current track is <span class="track" data-testid="myTrack">Frontend</span></p>
             </div>
         </div>
@@ -49,17 +50,10 @@ var dayOfWeek = weekdays[dayIndex];
 
 document.getElementById('c-day').textContent = dayOfWeek;
 
-            function updateUTCTime() {
 const now = new Date();
     const utcTime = now.getUTCHours() + ':' + now.getUTCMinutes() + ':' + now.getUTCSeconds() + ':' + now.getUTCMilliseconds();
 
     document.getElementById('c-time').textContent = utcTime;
-
-    }
-
-    setInterval(updateUTCTime, 1000);
-            
-    updateUTCTime();
     </script>
 </body>
 </html>
