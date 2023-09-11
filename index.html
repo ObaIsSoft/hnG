@@ -49,10 +49,17 @@ var dayOfWeek = weekdays[dayIndex];
 
 document.getElementById('c-day').textContent = dayOfWeek;
 
+            function updateUTCTime() {
 const now = new Date();
     const utcTime = now.getUTCHours() + ':' + now.getUTCMinutes() + ':' + now.getUTCSeconds() + ':' + now.getUTCMilliseconds();
 
     document.getElementById('c-time').textContent = utcTime;
+
+    }
+
+    setInterval(updateUTCTime, 1000);
+            
+    updateUTCTime();
     </script>
 </body>
 </html>
