@@ -20,9 +20,9 @@
                 </ul>
             </nav>
         </div>
-        <div class="top">
+         <div class="top">
             <div class="name">
-               <p>Hi, my name is<h2 data-testid="slackUserName">Obafemi Adebayo-Oyetoro</h2></p>
+               <h2 data-testid="slackUserName">Obafemi Adebayo-Oyetoro</h2>
             </div>
            <div class="img_wrapper">
                 <img src="./user.png" alt="Obafemi Adebayo-Oyetoro" data-testid="slackDisplayImage" height="200px" width="200px">
@@ -30,9 +30,13 @@
         </div>
         <div class="bottom">
             <div class="time-date">
-                <p class="day-text"> The current day is <span id="c-day" data-testid="currentDayOfTheWeek"></span></p>
-                <p class="time-text"> and the current time is <span id="c-time" data-testid="currentUTCTime"></span></p>
+            <span id="c-day" class="day-text" data-testid="currentDayOfTheWeek"></span>
+               <span class="time-text"id="c-time" data-testid="currentUTCTime"></span>
             </div>
+            <div class="track-wrapper">
+                <span class="track" data-testid="myTrack">Frontend</span>
+            </div>
+        </div>
             <div class="track-wrapper">
                 <p>My current track is <span class="track" data-testid="myTrack">Frontend</span></p>
             </div>
