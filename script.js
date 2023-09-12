@@ -1,10 +1,9 @@
-const dateContainer = document.getElementById("date")
 function updateUTCDayAndTime() {
-        const utcDate = new Date().toUTCString();
-        const utcTime = utcDate.split(' ')[4];
-        const utcDay = utcDate.split(',')[0];
+        const utcDate = new Date();
+        const utcTimeMilliseconds = utcDate.getTime();
+        const utcDay = new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(utcDate);
 
-        document.getElementById('c-time').textContent = utcTime;
+        document.getElementById('c-time').textContent = utcTimeMilliseconds.toString();
         document.getElementById('c-day').textContent = utcDay;
     }
 
