@@ -1,7 +1,9 @@
 <!doctype html>
-<html>
+<html lang="en">
     <head>
         <title>slack website</title>
+        <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./style.css" title="css" type="text/css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,21 +41,6 @@
             <p>Here is a link to my github repository</p>
             <a  class ="link"  href="https://github.com/ObaIsSoft/hnG.git" data-testid="githubURL" target="_blank">Check it</a>
         </div>
-        <script>
-  var weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-
-var currentDate = new Date();
-
-var dayIndex = currentDate.getDay();
-
-var dayOfWeek = weekdays[dayIndex];
-
-document.getElementById('c-day').textContent = dayOfWeek;
-
-const now = new Date();
-    const utcTime = now.getUTCHours() + ':' + now.getUTCMinutes() + ':' + now.getUTCSeconds() + ':' + now.getUTCMilliseconds();
-
-    document.getElementById('c-time').textContent = utcTime;
-    </script>
+        <script src="./script.js"> </script>
 </body>
 </html>
